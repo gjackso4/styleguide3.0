@@ -10,14 +10,12 @@
 
     <title>Admin Area</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <link rel="stylesheet" href="/css/adminstyle.css">
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   </head>
 
@@ -42,9 +40,9 @@
       <%- messages('messages', locals) %>
 
       <% if (errors) {%>
-
-        <div class="alert alert-danger">
-          Error Message : TODO
-          <!-- loop over errors object errors.msg-->
-        </div>
+          <% errors.forEach(function(error) { %>
+          <div class="alert alert-danger">
+              <%= error.msg %>
+          </div>
+          <% });%>
       <% }%>
