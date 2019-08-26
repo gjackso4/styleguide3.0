@@ -1,0 +1,30 @@
+{
+  "name": "styleguide3.0",
+  "version": "1.0.0",
+  "description": "Quantum Styleguide 3.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Quantum",
+    "Chevrolet",
+    "GMC",
+    "Buick",
+    "Caddilac",
+    "Styleguide"
+  ],
+  "author": "Greg Jackson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.16.2",
+    "express-validator": "^6.1.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {}
+}
