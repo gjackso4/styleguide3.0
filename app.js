@@ -54,9 +54,13 @@ app.use(function (req, res, next) {
 
 //Set Route
 var pages = require('./routes/pages.js');
+var admin = require('./routes/admin.js');
 var admin_pages = require('./routes/admin-page.js');
+var admin_categories = require('./routes/admin-categories.js');
 
+app.use('/admin/categories', admin_categories);
 app.use('/admin/pages', admin_pages);
+app.use('/admin', admin);
 app.use('/', pages);
 
 

@@ -184,7 +184,7 @@ router.post('/edit-page/:slug', [
               if(err) {
                 return console.log(err);
               } else {
-                req.flash('success', 'Page added!');
+                req.flash('success', 'Page saved!');
                 res.redirect('/admin/pages/edit-page/' + page.slug);
               }
             });

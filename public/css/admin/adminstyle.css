@@ -1,0 +1,16 @@
+.nav-item {
+  display: flex;
+}
+.nav-item {
+  flex-direction: column;
+}
+.sidebar {
+  float: left;
+}
+.sorting tr:not(.home) {
+  cursor: pointer;
+}
+
+.ui-state-highlight {
+  border: 1px dashed #ccc;
+}
